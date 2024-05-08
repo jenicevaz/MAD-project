@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_pet_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Type:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_pet_type"
+        android:layout_width="308dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@id/tv_pet_type"
+        android:hint="Enter pet type" />
+
+    <TextView
+        android:id="@+id/tv_food_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_pet_type"
+        android:layout_marginTop="16dp"
+        android:text="Food Type:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_food_type"
+        android:layout_width="294dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/et_pet_type"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@id/tv_food_type"
+        android:hint="Enter food type" />
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_food_type"
+        android:layout_marginTop="16dp"
+        android:text="Quantity:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_quantity"
+        android:layout_width="306dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/et_food_type"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@id/tv_quantity"
+        android:hint="Enter quantity"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_quantity"
+        android:layout_marginTop="16dp"
+        android:text="Address:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/tv_address"
+        android:layout_marginTop="8dp"
+        android:hint="Enter address"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/btn_place_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Place Order" />
+
+</RelativeLayout>

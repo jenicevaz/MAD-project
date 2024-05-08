@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".volunteer">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+       android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="177dp"
+          android:layout_height="150dp"
+          android:layout_marginTop="80dp"
+          android:contentDescription="@string/app_name"
+          android:src="@drawable/ones" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="53dp"
+          android:text="otp verification"
+          android:textColor="@color/black"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="50dp"
+          android:layout_marginTop="80dp"
+          android:layout_marginEnd="50dp"
+          android:layout_gravity="center"
+          android:text="we will send you a one-time"
+          android:textSize="20dp"
+          android:textColor="@color/black"
+          />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="30dp"
+          android:layout_marginEnd="50dp"
+          android:layout_gravity="center"
+          android:text="enter the mobile number"
+          android:textColor="@color/black"
+          android:textSize="20sp"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="60dp"
+          android:layout_marginEnd="60dp"
+          android:layout_gravity="center"
+          android:orientation="horizontal"
+          >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:layout_gravity="center"
+             android:text="@string/_91"
+             android:textColor="@color/black"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+         <EditText
+             android:id="@+id/inputmobile"
+             android:layout_width="188dp"
+             android:layout_height="48dp"
+             android:layout_gravity="center"
+             android:background="@null"
+             android:hint="@string/_1234567890"
+             android:imeOptions="actionDone"
+             android:importantForAutofill="no"
+             android:inputType="number"
+             android:textColor="@color/black"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             />
+      </LinearLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_marginStart="70dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="70dp"
+          android:background="@color/black"
+          />
+      <Button
+          android:id="@+id/buttonotp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/obtain_otp"
+          android:textStyle="bold"
+          android:textColor="@color/black"
+          android:layout_margin="30dp"/>
+
+
+      <ProgressBar
+          android:id="@+id/progessBar"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:visibility="gone"/>
+
+
+   </LinearLayout>
+</ScrollView>
+

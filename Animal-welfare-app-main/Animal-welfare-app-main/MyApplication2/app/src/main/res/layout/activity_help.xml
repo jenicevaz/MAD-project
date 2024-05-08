@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/helpTitleTextView"
+        android:layout_width="395dp"
+        android:layout_height="60dp"
+        android:text="Help"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/helpNameEditText"
+        android:layout_width="383dp"
+        android:layout_height="84dp"
+        android:layout_below="@id/helpTitleTextView"
+        android:layout_marginTop="132dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/helpPhoneEditText"
+        android:layout_width="385dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/helpNameEditText"
+        android:layout_marginTop="21dp"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/helpLocationEditText"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/helpPhoneEditText"
+        android:layout_marginTop="35dp"
+        android:hint="Location"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/helpDetailsEditText"
+        android:layout_width="363dp"
+        android:layout_height="86dp"
+
+        android:layout_marginTop="100dp"
+        android:hint="Details"
+        android:inputType="textMultiLine" />
+    <Button
+        android:id="@+id/helpCallButton"
+        android:layout_width="365dp"
+        android:layout_height="86dp"
+        android:layout_below="@id/helpSaveButton"
+        android:layout_marginTop="16dp"
+        android:text="Call" />
+
+
+    <Button
+        android:id="@+id/helpSaveButton"
+        android:layout_width="365dp"
+        android:layout_height="86dp"
+        android:layout_below="@id/helpDetailsEditText"
+        android:layout_marginTop="330dp"
+        android:text="Save" />
+
+</RelativeLayout>

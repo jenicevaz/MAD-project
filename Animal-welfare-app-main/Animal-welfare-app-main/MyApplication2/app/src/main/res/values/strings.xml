@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="_91">+91-</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="get_otp">get otp</string>
+    <string name="verify">verify</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="didnt_recive_the_otp">didnt recive the otp</string>
+    <string name="enter_the_otp_sent">enter the otp sent</string>
+    <string name="obtain_otp">GET OTP</string>
+    <string name="details">details</string>
+    <string name="lost_found">Lost Found</string>
+    <string name="volunteer">volunteer</string>
+</resources>

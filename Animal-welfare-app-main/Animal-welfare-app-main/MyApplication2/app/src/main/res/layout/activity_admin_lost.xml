@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_lost"
+    android:background="@drawable/per">
+
+    <!-- Include a Spinner for animal selection -->
+
+    <!-- Include EditText fields for animal information -->
+
+    <Spinner
+        android:id="@+id/animal_spinner"
+        android:layout_width="399dp"
+        android:layout_height="101dp"
+        android:entries="@array/animal_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/breed_edit_text"
+        android:layout_width="399dp"
+        android:layout_height="74dp"
+        android:hint="Breed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animal_spinner" />
+
+    <EditText
+        android:id="@+id/id_edit_text"
+        android:layout_width="394dp"
+        android:layout_height="78dp"
+        android:hint="ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/breed_edit_text" />
+
+    <EditText
+        android:id="@+id/color_edit_text"
+        android:layout_width="398dp"
+        android:layout_height="65dp"
+        android:hint="Color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_edit_text" />
+
+    <Button
+        android:id="@+id/capture_image_button"
+        android:layout_width="140dp"
+        android:layout_height="63dp"
+        android:text="Capture Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/color_edit_text" />
+
+    <ImageView
+        android:id="@+id/animal_image_view"
+        android:layout_width="206dp"
+        android:layout_height="219dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image"
+        app:layout_constraintBottom_toTopOf="@id/upload_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/capture_image_button" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="94dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animal_image_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".lost">
+
+    <TextView
+        android:id="@+id/textViewAnimalType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="9dp"
+        android:text="Animal Type:"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/animal_spinner"
+        android:layout_width="379dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/textViewAnimalType"
+        android:layout_marginTop="-4dp" />
+
+    <TextView
+        android:id="@+id/textViewBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animal_spinner"
+        android:layout_marginTop="16dp"
+        android:text="Breed:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextBreedSearch"
+        android:layout_width="365dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/textViewBreed"
+        android:layout_marginTop="-4dp"
+        android:hint="Enter breed" />
+
+    <TextView
+        android:id="@+id/textViewColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBreedSearch"
+        android:layout_marginTop="16dp"
+        android:text="Color:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextColorSearch"
+        android:layout_width="379dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/textViewColor"
+        android:layout_marginTop="-4dp"
+        android:hint="Enter color" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextColorSearch"
+        android:layout_marginTop="16dp"
+        android:text="Search" />
+
+    <ListView
+        android:id="@+id/animal_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_button"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/animal_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/animal_list_view"
+        android:layout_marginTop="16dp"
+        android:src="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/capture_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animal_list_view"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/animal_image_view"
+        android:text="Capture Image" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animal_list_view"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/capture_image_button"
+        android:text="Upload" />
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animal_image_view"
+        android:layout_marginTop="16dp"
+        android:hint="Search" />
+
+</RelativeLayout>
